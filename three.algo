@@ -1,0 +1,14 @@
+ALGORITHM Insertion sort(var tab: ARRAY_OF type[n],n:INTEGER)
+VAR
+    i,k,temp:INTEGER;
+BEGIN
+    FOR i FROM 1 TO n STEP 1  DO
+    j:=i-1;
+    temp:=tab[i];
+        WHILE (k >= 0 AND tab[k]>temp) DO
+            tab[k+1] := tab[k];
+            k=k-1;
+        END_WHILE
+        tab[k+1]:=temp;
+    END_FOR
+END
